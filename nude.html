@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="ama.css">
+  </head>
+  <body>
+    <div class="conteudo">
+      <img src="./lala.gif">
+      <h2>Vai mandar fototeta??</h2>
+      <div class="botoes">
+        <a href="https://www.youtube.com/watch?v=Z6ASUTHklnk"><b>Sim</b></a>
+        <a id="nao"><b>Não</b></a>
+    </div>
+  </div>
+  </body>
+
+<script>
+
+  let nao = document.getElementById("nao")
+  nao.onclick = function(){
+    let altura = Math.random() * (1000 - 1) + 1;
+    let largura = Math.random() * (414 - 1) + 1;
+    nao.style.position = "absolute"
+    nao.style.top = (altura + 50) + "px"
+    nao.style.right = (altura + 50) + "px"
+  }
+
+</script>
+
+</html>
